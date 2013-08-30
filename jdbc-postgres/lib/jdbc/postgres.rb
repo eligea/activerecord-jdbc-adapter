@@ -7,7 +7,8 @@ module Jdbc
     def self.driver_jar
       version_jdbc_version = DRIVER_VERSION.split( '.' )
       version_jdbc_version << jdbc_version
-      'postgresql-%s.%s-%s.jdbc%d.jar' % version_jdbc_version
+      # 'postgresql-%s.%s-%s.jdbc%d.jar' % version_jdbc_version
+      'postgresql-9.3-rc1.jar'
     end
 
     def self.load_driver(method = :load)
